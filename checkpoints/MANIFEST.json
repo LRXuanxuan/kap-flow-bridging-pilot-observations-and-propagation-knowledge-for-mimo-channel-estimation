@@ -1,0 +1,529 @@
+{
+  "schema_version": 1,
+  "repository": "LRXuanxuan/kap-flow-bridging-pilot-observations-and-propagation-knowledge-for-mimo-channel-estimation",
+  "release_tag": "v1.0-checkpoints",
+  "generated_on": "2026-10-30",
+  "generated_by": "tools/export_inference_ckpt.py (inference export) + maintainer build_weights_release.py (manifest/checksums)",
+  "weights_policy": "The .pt files are NOT stored in git. They are GitHub Release assets downloaded by tools/download_checkpoints.py into checkpoints/, which is the target_relative_path layout below. Inference exports keep format_version/model/ema/config/normalization/training_state/best_metrics/extra and drop optimizer/scheduler/scaler/rng_state; the evaluation entry point loads them unchanged.",
+  "normalization_and_eval": "src/ckmsrf/evaluate.py::_load_model_weights loads 'model' first and then overwrites it with 'ema.shadow' (prefer_ema=True by default), so the reported numbers use the EMA weights.",
+  "source_path_convention": "source_original_path is relative to the authors' training run roots (runs/<experiment>/<timestamp>/...); machine-local absolute paths are not published. source_relative_path is the original path inside the authors' project checkout.",
+  "totals": {
+    "entries": 17,
+    "release_assets": 15,
+    "size_original_bytes": 846353945,
+    "size_inference_bytes": 426710727,
+    "size_release_assets_bytes": 426713719,
+    "size_original_mb": 846.35,
+    "size_inference_mb": 426.71,
+    "size_release_assets_mb": 426.71
+  },
+  "release_assets": [
+    {
+      "name": "main_straight_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "f2b3520b16e3ba35eb30e637741c7a5266960738a2e7a2c0741b7d7af4ee7a74",
+      "size_bytes": 32315959,
+      "checkpoint_ids": [
+        "straight_ckm"
+      ],
+      "target_paths": [
+        "checkpoints/main/straight/ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "main_straight_no_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "79877c3d67001c847bbfef3b1384bced9d9382324ff5c52187664070bd66e610",
+      "size_bytes": 32316343,
+      "checkpoint_ids": [
+        "straight_no_ckm"
+      ],
+      "target_paths": [
+        "checkpoints/main/straight/no_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "main_threefold_holdout_01_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "ef715566ca0359a53a055b4c8a5904cce5fb29142c95d73e1ceeba6260021939",
+      "size_bytes": 32316279,
+      "checkpoint_ids": [
+        "straight_ckm_fold1"
+      ],
+      "target_paths": [
+        "checkpoints/main/threefold/holdout_01/ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "main_threefold_holdout_01_no_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "5e35e8a4adddcc6a039caf221ca4be92990c7f7f7d1105e2e1911a8c7a9d295b",
+      "size_bytes": 32316343,
+      "checkpoint_ids": [
+        "straight_no_ckm_fold1"
+      ],
+      "target_paths": [
+        "checkpoints/main/threefold/holdout_01/no_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "main_threefold_holdout_02_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "c0c60040a0fc0b26f1d2eb60e38aa6e17d07e548388561f81cbd4c4930d701a3",
+      "size_bytes": 32316279,
+      "checkpoint_ids": [
+        "straight_ckm_fold2"
+      ],
+      "target_paths": [
+        "checkpoints/main/threefold/holdout_02/ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "main_threefold_holdout_02_no_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "604362bc5137fb1d6930cd1da4210a36e8228f954c340d440cfb82b3fcb2377c",
+      "size_bytes": 32316343,
+      "checkpoint_ids": [
+        "straight_no_ckm_fold2"
+      ],
+      "target_paths": [
+        "checkpoints/main/threefold/holdout_02/no_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "main_threefold_holdout_03_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "68e8e6f08bbc93f220c7c83b18856e4e540b027b54a2d23dd68e0dae1f1487f9",
+      "size_bytes": 32316279,
+      "checkpoint_ids": [
+        "straight_ckm_fold3"
+      ],
+      "target_paths": [
+        "checkpoints/main/threefold/holdout_03/ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "main_threefold_holdout_03_no_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "bc5ab44367ba762d1b94d29facf4d716841b22b8c6f638536382a841ad863612",
+      "size_bytes": 32316343,
+      "checkpoint_ids": [
+        "straight_no_ckm_fold3"
+      ],
+      "target_paths": [
+        "checkpoints/main/threefold/holdout_03/no_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "baselines_rcflow_no_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "a04b9f447d2f555800122aa86c9928884b2419f285c558559b1b7e54e41fecf3",
+      "size_bytes": 31455047,
+      "checkpoint_ids": [
+        "rcflow_no_ckm"
+      ],
+      "target_paths": [
+        "checkpoints/baselines/rcflow_no_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "baselines_rcflow_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "88cf42bf7231c18990999512f6b259f71dafab137d972cc1ec2d997f45a5cc9d",
+      "size_bytes": 32459239,
+      "checkpoint_ids": [
+        "rcflow_ckm"
+      ],
+      "target_paths": [
+        "checkpoints/baselines/rcflow_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "baselines_srf_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "0796fc56a6d78ad585578b69bd14293e702d886dbec5078db06cac2193e96ac3",
+      "size_bytes": 32459239,
+      "checkpoint_ids": [
+        "srf_ckm"
+      ],
+      "target_paths": [
+        "checkpoints/baselines/srf_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "baselines_pnp_cm_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "4bca4f3cbe3fb8ddf15043b80b110ab0f36a42ac56cc6ad556f404791acfd9ef",
+      "size_bytes": 32315127,
+      "checkpoint_ids": [
+        "pnp_cm_ckm"
+      ],
+      "target_paths": [
+        "checkpoints/baselines/pnp_cm_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "baselines_pnp_cm_no_ckm.pt",
+      "kind": "checkpoint",
+      "sha256": "aa1ed3b3f8bedbf51383c15cbda1495e3241c7e529fe53017ddc0418fa03558b",
+      "size_bytes": 32315191,
+      "checkpoint_ids": [
+        "pnp_cm_no_ckm"
+      ],
+      "target_paths": [
+        "checkpoints/baselines/pnp_cm_no_ckm/best_nmse.pt"
+      ]
+    },
+    {
+      "name": "lmmse_statistics.zip",
+      "kind": "archive",
+      "sha256": "7d9f5049dbf58d6a26c824d27b9f3c47494f4d2c0e1edbeeb4c5ff7479856e0b",
+      "size_bytes": 7177448,
+      "checkpoint_ids": [
+        "lmmse",
+        "lmmse_fold1",
+        "lmmse_fold2",
+        "lmmse_fold3"
+      ],
+      "target_paths": [
+        "checkpoints/baselines_statistics/in_domain/lmmse_train_only.pt",
+        "checkpoints/baselines_statistics/holdout_01/lmmse_train_only.pt",
+        "checkpoints/baselines_statistics/holdout_02/lmmse_train_only.pt",
+        "checkpoints/baselines_statistics/holdout_03/lmmse_train_only.pt"
+      ]
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "kind": "manifest",
+      "sha256": "e53335b99c9080451e11c9696dad2444f583431950c2efc2c6714a32c4fa9964",
+      "size_bytes": 2260,
+      "checkpoint_ids": [],
+      "target_paths": []
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "straight_ckm",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "ckm",
+      "fold": 0,
+      "paper_role": "In-domain CKM-conditioned straight-flow prior shared by KAP-C and PF-C (Table I rows KAP-C/PF-C; Fig. 3 subspace gains; Fig. 4(b) endpoint averaging)",
+      "source_original_path": "runs/ckm_straight_flow_prior/20260901-200938_seed3407/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/straight/ckm/best_nmse.pt",
+      "release_asset_name": "main_straight_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "f2b3520b16e3ba35eb30e637741c7a5266960738a2e7a2c0741b7d7af4ee7a74",
+      "sha256_original": "07b07900ec9c2b3279747bd9dc4a8ffaeaefb9a8c6d6453b51e39cea249dd156",
+      "sha256_inference": "f2b3520b16e3ba35eb30e637741c7a5266960738a2e7a2c0741b7d7af4ee7a74",
+      "size_original_bytes": 64640075,
+      "size_inference_bytes": 32315959,
+      "target_relative_path": "checkpoints/main/straight/ckm/best_nmse.pt"
+    },
+    {
+      "id": "straight_no_ckm",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "no_ckm",
+      "fold": 0,
+      "paper_role": "In-domain unconditional straight-flow prior shared by KAP-U and PF-U (Table I rows KAP-U/PF-U; Fig. 3 subspace gains)",
+      "source_original_path": "runs/straight_flow_no-ckm_in_domain/paper_straight_factor_20260904_in_domain_no-ckm/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/straight/no_ckm/best_nmse.pt",
+      "release_asset_name": "main_straight_no_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "79877c3d67001c847bbfef3b1384bced9d9382324ff5c52187664070bd66e610",
+      "sha256_original": "9256324b2377ffb82df431b0caced93652c2b6f1451e3e3e2a4576a10395883a",
+      "sha256_inference": "79877c3d67001c847bbfef3b1384bced9d9382324ff5c52187664070bd66e610",
+      "size_original_bytes": 64641097,
+      "size_inference_bytes": 32316343,
+      "target_relative_path": "checkpoints/main/straight/no_ckm/best_nmse.pt"
+    },
+    {
+      "id": "straight_ckm_fold1",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "ckm",
+      "fold": 1,
+      "paper_role": "Site-transfer fold 1 (holdout scene 1) CKM prior for KAP-C/PF-C (Fig. 4(a))",
+      "source_original_path": "runs/straight_flow_ckm_holdout_scene_01/paper_straight_cross_scene_20260904_holdout_scene_01_ckm/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/threefold/holdout_01/ckm/best_nmse.pt",
+      "release_asset_name": "main_threefold_holdout_01_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "ef715566ca0359a53a055b4c8a5904cce5fb29142c95d73e1ceeba6260021939",
+      "sha256_original": "ac026685c6ea075d419af97a9288f3af055e07c8b2d2a05c8e023a3d82244d29",
+      "sha256_inference": "ef715566ca0359a53a055b4c8a5904cce5fb29142c95d73e1ceeba6260021939",
+      "size_original_bytes": 64640969,
+      "size_inference_bytes": 32316279,
+      "target_relative_path": "checkpoints/main/threefold/holdout_01/ckm/best_nmse.pt"
+    },
+    {
+      "id": "straight_no_ckm_fold1",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "no_ckm",
+      "fold": 1,
+      "paper_role": "Site-transfer fold 1 unconditional prior for KAP-U/PF-U (Fig. 4(a))",
+      "source_original_path": "runs/straight_flow_no-ckm_holdout_scene_01/paper_straight_cross_scene_20260904_holdout_scene_01_no-ckm/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/threefold/holdout_01/no_ckm/best_nmse.pt",
+      "release_asset_name": "main_threefold_holdout_01_no_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "5e35e8a4adddcc6a039caf221ca4be92990c7f7f7d1105e2e1911a8c7a9d295b",
+      "sha256_original": "79d8d2fec5207b28c4e37e1d8b2f047a2720e8855d9ca18abe0cdbb8dfbf6131",
+      "sha256_inference": "5e35e8a4adddcc6a039caf221ca4be92990c7f7f7d1105e2e1911a8c7a9d295b",
+      "size_original_bytes": 64641033,
+      "size_inference_bytes": 32316343,
+      "target_relative_path": "checkpoints/main/threefold/holdout_01/no_ckm/best_nmse.pt"
+    },
+    {
+      "id": "straight_ckm_fold2",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "ckm",
+      "fold": 2,
+      "paper_role": "Site-transfer fold 2 (holdout scene 2) CKM prior for KAP-C/PF-C (Fig. 4(a))",
+      "source_original_path": "runs/straight_flow_ckm_holdout_scene_02/paper_straight_cross_scene_20260904_holdout_scene_02_ckm/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/threefold/holdout_02/ckm/best_nmse.pt",
+      "release_asset_name": "main_threefold_holdout_02_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "c0c60040a0fc0b26f1d2eb60e38aa6e17d07e548388561f81cbd4c4930d701a3",
+      "sha256_original": "17125f344a14ab88ed375bf46143436e5f632a330f1d7ae6c16fc73b3a8afe64",
+      "sha256_inference": "c0c60040a0fc0b26f1d2eb60e38aa6e17d07e548388561f81cbd4c4930d701a3",
+      "size_original_bytes": 64640969,
+      "size_inference_bytes": 32316279,
+      "target_relative_path": "checkpoints/main/threefold/holdout_02/ckm/best_nmse.pt"
+    },
+    {
+      "id": "straight_no_ckm_fold2",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "no_ckm",
+      "fold": 2,
+      "paper_role": "Site-transfer fold 2 unconditional prior for KAP-U/PF-U (Fig. 4(a))",
+      "source_original_path": "runs/straight_flow_no-ckm_holdout_scene_02/paper_straight_cross_scene_20260904_holdout_scene_02_no-ckm/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/threefold/holdout_02/no_ckm/best_nmse.pt",
+      "release_asset_name": "main_threefold_holdout_02_no_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "604362bc5137fb1d6930cd1da4210a36e8228f954c340d440cfb82b3fcb2377c",
+      "sha256_original": "d0ccf9c61d719adfae6c2eb150527afb5aab9f51bd1dd0ac953fc8349e0910dd",
+      "sha256_inference": "604362bc5137fb1d6930cd1da4210a36e8228f954c340d440cfb82b3fcb2377c",
+      "size_original_bytes": 64641033,
+      "size_inference_bytes": 32316343,
+      "target_relative_path": "checkpoints/main/threefold/holdout_02/no_ckm/best_nmse.pt"
+    },
+    {
+      "id": "straight_ckm_fold3",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "ckm",
+      "fold": 3,
+      "paper_role": "Site-transfer fold 3 (holdout scene 3) CKM prior for KAP-C/PF-C (Fig. 4(a))",
+      "source_original_path": "runs/straight_flow_ckm_holdout_scene_03/paper_straight_cross_scene_20260904_holdout_scene_03_ckm/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/threefold/holdout_03/ckm/best_nmse.pt",
+      "release_asset_name": "main_threefold_holdout_03_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "68e8e6f08bbc93f220c7c83b18856e4e540b027b54a2d23dd68e0dae1f1487f9",
+      "sha256_original": "c99528f14eaa96092615c0633049a92b7b2236825fae051b2a56c5194cb00194",
+      "sha256_inference": "68e8e6f08bbc93f220c7c83b18856e4e540b027b54a2d23dd68e0dae1f1487f9",
+      "size_original_bytes": 64640969,
+      "size_inference_bytes": 32316279,
+      "target_relative_path": "checkpoints/main/threefold/holdout_03/ckm/best_nmse.pt"
+    },
+    {
+      "id": "straight_no_ckm_fold3",
+      "kind": "weights",
+      "method": "KAP-Flow (FlowADMM) / PnP-Flow, shared prior",
+      "used_by": "flowadmm,pnpflow",
+      "condition": "no_ckm",
+      "fold": 3,
+      "paper_role": "Site-transfer fold 3 unconditional prior for KAP-U/PF-U (Fig. 4(a))",
+      "source_original_path": "runs/straight_flow_no-ckm_holdout_scene_03/paper_straight_cross_scene_20260904_holdout_scene_03_no-ckm/checkpoints/best_nmse.pt",
+      "source_relative_path": "main/checkpoints/threefold/holdout_03/no_ckm/best_nmse.pt",
+      "release_asset_name": "main_threefold_holdout_03_no_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "bc5ab44367ba762d1b94d29facf4d716841b22b8c6f638536382a841ad863612",
+      "sha256_original": "85841451b9e54e659b20385805d1e7c639f3a4d16f6f9daf2af4f1e34c6ffc7e",
+      "sha256_inference": "bc5ab44367ba762d1b94d29facf4d716841b22b8c6f638536382a841ad863612",
+      "size_original_bytes": 64641033,
+      "size_inference_bytes": 32316343,
+      "target_relative_path": "checkpoints/main/threefold/holdout_03/no_ckm/best_nmse.pt"
+    },
+    {
+      "id": "rcflow_no_ckm",
+      "kind": "weights",
+      "method": "RC baseline",
+      "used_by": "rcflow_no_ckm",
+      "condition": "no_ckm",
+      "fold": 0,
+      "paper_role": "RC-U baseline prior (Table I row RC-U)",
+      "source_original_path": "runs/baseline_no_ckm/20260716-212304_seed3407/checkpoints/best_nmse.pt",
+      "source_relative_path": "baselines/checkpoints/rcflow_no_ckm/best_nmse.pt",
+      "release_asset_name": "baselines_rcflow_no_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "a04b9f447d2f555800122aa86c9928884b2419f285c558559b1b7e54e41fecf3",
+      "sha256_original": "94383daf30359f6573107aaf95be1fdc9ea4517bad050c51ea1801ef8d0b875e",
+      "sha256_inference": "a04b9f447d2f555800122aa86c9928884b2419f285c558559b1b7e54e41fecf3",
+      "size_original_bytes": 62912959,
+      "size_inference_bytes": 31455047,
+      "target_relative_path": "checkpoints/baselines/rcflow_no_ckm/best_nmse.pt"
+    },
+    {
+      "id": "rcflow_ckm",
+      "kind": "weights",
+      "method": "RC baseline",
+      "used_by": "rcflow_ckm",
+      "condition": "ckm",
+      "fold": 0,
+      "paper_role": "RC-C baseline prior (Table I row RC-C)",
+      "source_original_path": "runs/ckmsrf_prior/20260716-113417_seed3407/checkpoints/best_nmse.pt",
+      "source_relative_path": "baselines/checkpoints/rcflow_ckm/best_nmse.pt",
+      "release_asset_name": "baselines_rcflow_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "88cf42bf7231c18990999512f6b259f71dafab137d972cc1ec2d997f45a5cc9d",
+      "sha256_original": "6c2dd5854b34d2b870d601b32a66254674712af5a13a1ad6b49f51d24bdc341f",
+      "sha256_inference": "88cf42bf7231c18990999512f6b259f71dafab137d972cc1ec2d997f45a5cc9d",
+      "size_original_bytes": 64929271,
+      "size_inference_bytes": 32459239,
+      "target_relative_path": "checkpoints/baselines/rcflow_ckm/best_nmse.pt"
+    },
+    {
+      "id": "srf_ckm",
+      "kind": "weights",
+      "method": "RC-S (SRF) baseline",
+      "used_by": "srf_ckm",
+      "condition": "ckm",
+      "fold": 0,
+      "paper_role": "RC-S baseline prior (Table I row RC-S; SRF)",
+      "source_original_path": "runs/ckmsrf_full/20260716-211753_seed3407/checkpoints/best_nmse.pt",
+      "source_relative_path": "baselines/checkpoints/srf_ckm/best_nmse.pt",
+      "release_asset_name": "baselines_srf_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "0796fc56a6d78ad585578b69bd14293e702d886dbec5078db06cac2193e96ac3",
+      "sha256_original": "7d56c5650afb9646d62f56805c4560ea2f4ba1e23630fbe86d2c1db944f6f211",
+      "sha256_inference": "0796fc56a6d78ad585578b69bd14293e702d886dbec5078db06cac2193e96ac3",
+      "size_original_bytes": 64929271,
+      "size_inference_bytes": 32459239,
+      "target_relative_path": "checkpoints/baselines/srf_ckm/best_nmse.pt"
+    },
+    {
+      "id": "pnp_cm_ckm",
+      "kind": "weights",
+      "method": "PnP-CM baseline",
+      "used_by": "pnp_cm_ckm",
+      "condition": "ckm",
+      "fold": 0,
+      "paper_role": "CM-C baseline denoiser (Table I row CM-C)",
+      "source_original_path": "runs/ckmcm_prior/20260716-112220_seed3407/checkpoints/best_nmse.pt",
+      "source_relative_path": "baselines/checkpoints/pnp_cm_ckm/best_nmse.pt",
+      "release_asset_name": "baselines_pnp_cm_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "4bca4f3cbe3fb8ddf15043b80b110ab0f36a42ac56cc6ad556f404791acfd9ef",
+      "sha256_original": "575323c773e733d0275e844bfcfa20ca83b1e152366cbc0015fa62d65bd93a34",
+      "sha256_inference": "4bca4f3cbe3fb8ddf15043b80b110ab0f36a42ac56cc6ad556f404791acfd9ef",
+      "size_original_bytes": 64639243,
+      "size_inference_bytes": 32315127,
+      "target_relative_path": "checkpoints/baselines/pnp_cm_ckm/best_nmse.pt"
+    },
+    {
+      "id": "pnp_cm_no_ckm",
+      "kind": "weights",
+      "method": "PnP-CM baseline",
+      "used_by": "pnp_cm_no_ckm",
+      "condition": "no_ckm",
+      "fold": 0,
+      "paper_role": "CM-U baseline denoiser (Table I row CM-U)",
+      "source_original_path": "runs/ckmcm_no_ckm/20260717-174041_seed3407/checkpoints/best_nmse.pt",
+      "source_relative_path": "baselines/checkpoints/pnp_cm_no_ckm/best_nmse.pt",
+      "release_asset_name": "baselines_pnp_cm_no_ckm.pt",
+      "release_asset_member": null,
+      "release_asset_sha256": "aa1ed3b3f8bedbf51383c15cbda1495e3241c7e529fe53017ddc0418fa03558b",
+      "sha256_original": "cbafac3834a6bbe1478bb403af858cdaa572918871951daba1d23f9a3d82143e",
+      "sha256_inference": "aa1ed3b3f8bedbf51383c15cbda1495e3241c7e529fe53017ddc0418fa03558b",
+      "size_original_bytes": 64639307,
+      "size_inference_bytes": 32315191,
+      "target_relative_path": "checkpoints/baselines/pnp_cm_no_ckm/best_nmse.pt"
+    },
+    {
+      "id": "lmmse",
+      "kind": "statistics",
+      "method": "LMMSE",
+      "used_by": "lmmse",
+      "condition": "none",
+      "fold": 0,
+      "paper_role": "In-domain LMMSE second-order statistics (Table I row LMMSE)",
+      "source_original_path": "runs/studies/solver_subspace/20260913_fixed/statistics/lmmse_train_only.pt",
+      "source_relative_path": "baselines/statistics/in_domain/lmmse_train_only.pt",
+      "release_asset_name": "lmmse_statistics.zip",
+      "release_asset_member": "baselines_statistics/in_domain/lmmse_train_only.pt",
+      "release_asset_sha256": "7d9f5049dbf58d6a26c824d27b9f3c47494f4d2c0e1edbeeb4c5ff7479856e0b",
+      "sha256_original": "f7bee570d3a58d79e8acb23641858cea344114ce2291d25dda74979a25e9cc3c",
+      "sha256_inference": "f7bee570d3a58d79e8acb23641858cea344114ce2291d25dda74979a25e9cc3c",
+      "size_original_bytes": 2193869,
+      "size_inference_bytes": 2193869,
+      "target_relative_path": "checkpoints/baselines_statistics/in_domain/lmmse_train_only.pt"
+    },
+    {
+      "id": "lmmse_fold1",
+      "kind": "statistics",
+      "method": "LMMSE",
+      "used_by": "lmmse",
+      "condition": "none",
+      "fold": 1,
+      "paper_role": "Source-only LMMSE statistics for site-transfer fold 1 (Fig. 4(a))",
+      "source_original_path": "runs/studies/straight_flow/paper_straight_cross_scene_20260904/statistics/holdout_scene_01/lmmse_train_only.pt",
+      "source_relative_path": "baselines/statistics/holdout_01/lmmse_train_only.pt",
+      "release_asset_name": "lmmse_statistics.zip",
+      "release_asset_member": "baselines_statistics/holdout_01/lmmse_train_only.pt",
+      "release_asset_sha256": "7d9f5049dbf58d6a26c824d27b9f3c47494f4d2c0e1edbeeb4c5ff7479856e0b",
+      "sha256_original": "baa1a19c1ad17240fcb36730c98ceca72d29c4150bdc59f32cb7160b8d746bfe",
+      "sha256_inference": "baa1a19c1ad17240fcb36730c98ceca72d29c4150bdc59f32cb7160b8d746bfe",
+      "size_original_bytes": 1660949,
+      "size_inference_bytes": 1660949,
+      "target_relative_path": "checkpoints/baselines_statistics/holdout_01/lmmse_train_only.pt"
+    },
+    {
+      "id": "lmmse_fold2",
+      "kind": "statistics",
+      "method": "LMMSE",
+      "used_by": "lmmse",
+      "condition": "none",
+      "fold": 2,
+      "paper_role": "Source-only LMMSE statistics for site-transfer fold 2 (Fig. 4(a))",
+      "source_original_path": "runs/studies/straight_flow/paper_straight_cross_scene_20260904/statistics/holdout_scene_02/lmmse_train_only.pt",
+      "source_relative_path": "baselines/statistics/holdout_02/lmmse_train_only.pt",
+      "release_asset_name": "lmmse_statistics.zip",
+      "release_asset_member": "baselines_statistics/holdout_02/lmmse_train_only.pt",
+      "release_asset_sha256": "7d9f5049dbf58d6a26c824d27b9f3c47494f4d2c0e1edbeeb4c5ff7479856e0b",
+      "sha256_original": "f3614b077511e92b44231bdea91b9f5c052681cfca60990f46ce5672e6339a97",
+      "sha256_inference": "f3614b077511e92b44231bdea91b9f5c052681cfca60990f46ce5672e6339a97",
+      "size_original_bytes": 1660949,
+      "size_inference_bytes": 1660949,
+      "target_relative_path": "checkpoints/baselines_statistics/holdout_02/lmmse_train_only.pt"
+    },
+    {
+      "id": "lmmse_fold3",
+      "kind": "statistics",
+      "method": "LMMSE",
+      "used_by": "lmmse",
+      "condition": "none",
+      "fold": 3,
+      "paper_role": "Source-only LMMSE statistics for site-transfer fold 3 (Fig. 4(a))",
+      "source_original_path": "runs/studies/straight_flow/paper_straight_cross_scene_20260904/statistics/holdout_scene_03/lmmse_train_only.pt",
+      "source_relative_path": "baselines/statistics/holdout_03/lmmse_train_only.pt",
+      "release_asset_name": "lmmse_statistics.zip",
+      "release_asset_member": "baselines_statistics/holdout_03/lmmse_train_only.pt",
+      "release_asset_sha256": "7d9f5049dbf58d6a26c824d27b9f3c47494f4d2c0e1edbeeb4c5ff7479856e0b",
+      "sha256_original": "d0e2d40ae17ef4da72ff25a2798b15e085afac553a74f77e1af27497473ca3bc",
+      "sha256_inference": "d0e2d40ae17ef4da72ff25a2798b15e085afac553a74f77e1af27497473ca3bc",
+      "size_original_bytes": 1660949,
+      "size_inference_bytes": 1660949,
+      "target_relative_path": "checkpoints/baselines_statistics/holdout_03/lmmse_train_only.pt"
+    }
+  ]
+}

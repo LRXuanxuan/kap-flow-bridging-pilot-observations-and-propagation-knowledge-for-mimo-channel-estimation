@@ -1,0 +1,12 @@
+hardware:
+  device: auto
+  precision: auto
+  use_accelerate: true
+  batch_size: 4
+  eval_batch_size: 8
+  grad_accum_steps: 8
+  num_workers: 4
+  pin_memory: auto
+  persistent_workers: auto
+  gradient_checkpointing: false
+

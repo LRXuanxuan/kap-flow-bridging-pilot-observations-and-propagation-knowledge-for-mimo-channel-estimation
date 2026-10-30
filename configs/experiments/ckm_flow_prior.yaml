@@ -1,0 +1,83 @@
+experiment:
+  name: ckm_flow_prior
+  description: Capacity-matched CKM-conditioned additive Flow Matching prior for PnP estimation
+
+data:
+  backend: auto
+  index_file: indices/{split}.json
+  sampling: random_tf
+  train_scenes: [scene_01, scene_02, scene_03]
+  validation_scenes: [scene_01, scene_02, scene_03]
+  test_scenes: [scene_01, scene_02, scene_03]
+  include_observation: false
+  normalization:
+    mode: global_rms
+    stats_file: normalization.json
+
+# The backbone and CKM condition encoder match ckmcm_prior.yaml and
+# ckm_diffusion_prior.yaml. Only the two-channel output semantics and training
+# objective change: this model predicts additive-path velocity epsilon.
+model:
+  type: flow_matching
+  in_channels: 2
+  out_channels: 2
+  dim: 32
+  dim_mults: [1, 2, 4]
+  groups: 8
+  condition:
+    enabled: true
+    embed_dim: 128
+    scalar_dim: 6
+    state_dim: 8
+    tx_beam_dim: 64
+    rx_beam_dim: 16
+    adp_shape: [16, 16, 12]
+    dropout_prob: 0.10
+    use_scalar: true
+    use_state: true
+    use_beam: true
+    use_adp: true
+
+# Shared noise coordinate and input preconditioning.
+consistency:
+  sigma_min: 0.002
+  sigma_max: 2.0
+  sigma_data: 1.0
+
+# Match the Diffusion baseline's training-scale distribution. The distinction
+# is clean-signal EDM regression versus unweighted path-velocity regression.
+flow_matching:
+  p_mean: -1.2
+  p_std: 1.2
+
+loss:
+  type: flow_matching
+
+sampling:
+  solver: pnp_admm
+  pnp_iterations: 4
+  pnp_rho: 1.0
+  pnp_lambda: 0.1
+  pnp_adaptive_rho: false
+  pnp_momentum: 0.0
+
+optimizer:
+  name: adamw
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  betas: [0.9, 0.99]
+
+scheduler:
+  name: cosine
+  warmup_steps: 1000
+  step_interval: step
+
+training:
+  seed: 3407
+  validation_seed: 9102
+  epochs: 200
+  ema_decay: 0.999
+  max_grad_norm: 1.0
+  log_every_steps: 20
+  validate_every_epochs: 1
+  save_every_epochs: 1

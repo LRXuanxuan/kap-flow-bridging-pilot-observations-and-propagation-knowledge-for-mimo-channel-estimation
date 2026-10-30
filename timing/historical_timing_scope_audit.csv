@@ -1,0 +1,172 @@
+﻿method,snr_db,ms_per_sample,scope,source
+RC-U,-10,43.12885195600878,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,-5,42.7595024878392,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,0,43.204383145668544,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,5,42.84506781915358,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,10,43.05170041483749,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,15,42.72037430299679,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,20,42.69546962232562,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,25,41.8278265488334,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-U,30,42.01072918901142,entire evaluation (I/O + metrics + solver),7_17\20260717\baseline\metrics.csv
+RC-C,-10,51.48809394449927,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,-5,46.87148105915791,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,0,50.69791594782146,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,5,50.953211736651916,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,10,50.00691463117255,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,15,49.815805014998965,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,20,49.13018224233141,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,25,49.77027370899062,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-C,30,45.673376119171735,entire evaluation (I/O + metrics + solver),7_17\20260717\prior\metrics.csv
+RC-S,-10,45.877920442668255,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,-5,48.04533473283906,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,0,48.29363787698094,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,5,48.41511630049596,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,10,47.57898325399341,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,15,48.59989162433582,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,20,47.614669028339755,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,25,47.73222104265975,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+RC-S,30,46.60353445414997,entire evaluation (I/O + metrics + solver),7_17\20260717\full\metrics.csv
+CM-U,-10,5.511939040501602,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,-5,5.314064958326829,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,0,5.393409392020355,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,5,5.311272119171917,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,10,5.488297660175401,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,15,5.62107031881654,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,20,5.2881778956701355,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,25,5.298231287665355,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-U,30,5.271380455660013,entire evaluation (I/O + metrics + solver),7_18\test_cm_pnp_no_ckm_fixed_k4_r1_l01\metrics.csv
+CM-C,-10,5.6168088938381215,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,-5,5.458698297501542,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,0,5.457068148010876,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,5,5.3908662038350785,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,10,5.397401668150754,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,15,5.667344181992424,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,20,5.821596393652726,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,25,5.5261805755047435,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+CM-C,30,5.4712487309977105,entire evaluation (I/O + metrics + solver),7_17\test_cm_pnp_fixed_k4_r1_l01\metrics.csv
+Diff-U,-10,6.069771991334467,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,-5,5.643671830339978,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,0,5.471362617836955,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,5,5.643357089002772,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,10,5.746139107165315,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,15,5.410355888161575,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,20,5.44042737383279,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,25,5.532713903007486,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-U,30,5.2026568770039985,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_no_ckm_fixed_k4_r1_l01\metrics.csv
+Diff-C,-10,5.881500491668703,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,-5,5.427348017333618,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,0,5.708380061162946,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,5,5.69136732800204,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,10,5.532332456166235,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,15,5.387867377828418,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,20,5.758302178505498,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,25,5.584237794333603,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+Diff-C,30,5.317858339006004,entire evaluation (I/O + metrics + solver),8_27\test_pnp_diffusion_fixed_k4_r1_l01\metrics.csv
+FA-C,-10,23.43395904544741,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,-5,23.445500567749452,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,0,23.572376918047667,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,5,23.71184478653595,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,10,23.344152723749477,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,15,23.62377917386281,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,20,23.572713200584985,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,25,23.616608655274224,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,30,23.486169237216625,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009102\M_01\metrics.csv
+FA-C,-10,21.252140928719502,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,-5,21.15421148983296,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,0,21.52008806289329,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,5,20.86387829936575,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,10,21.009128326627735,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,15,21.009423094025504,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,20,21.167178393613238,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,25,20.831638751667924,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,30,20.929132879828103,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009103\M_01\metrics.csv
+FA-C,-10,19.15375432628207,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,-5,19.19037499073117,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,0,19.876930262039725,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,5,19.372017769220594,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,10,19.51849232315241,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,15,19.339418043964542,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,20,19.245089594934445,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,25,19.234690972060587,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-C,30,19.72877002802367,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\ckm\seed_10009104\M_01\metrics.csv
+FA-U,-10,23.73403864458669,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,-5,22.73884735648365,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,0,22.518527786480263,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,5,20.29807168901122,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,10,19.682005415903404,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,15,19.415477874844026,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,20,20.584010653275374,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,25,20.1542054854411,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,30,19.670190352907714,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009102\M_01\metrics.csv
+FA-U,-10,19.726685829111375,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,-5,19.57475790796646,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,0,19.859396539240453,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,5,19.56533044805595,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,10,19.08472915913444,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,15,19.147327047772706,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,20,19.479816199319128,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,25,19.707346753488917,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,30,18.880442569691997,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009103\M_01\metrics.csv
+FA-U,-10,19.5805026985084,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,-5,19.511423391251203,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,0,19.384025018623408,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,5,19.402616190258414,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,10,19.444907175609842,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,15,19.592398858939607,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,20,19.478900073251378,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,25,19.180647528924357,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+FA-U,30,19.34237450508711,legacy solver loop (diagnostics included),9_18\flowadmm_m_subspace\20260916_tau0p125_lo0_hi0p95_g0p25\no-ckm\seed_10009104\M_01\metrics.csv
+PF-C,-10,22.06857924403933,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,-5,21.89643718597169,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,0,21.88718998913343,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,5,22.0874966577976,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,10,22.452698371062677,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,15,22.442892327342026,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,20,22.18169578081385,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,25,21.519444727397058,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,30,21.448280408415787,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009102\metrics.csv
+PF-C,-10,17.513628994910203,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,-5,17.33226973435376,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,0,17.366761207658175,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,5,17.247417921704862,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,10,17.278178744328518,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,15,17.21019791487682,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,20,17.67128637440813,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,25,17.368601953766,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,30,17.497348573543906,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009103\metrics.csv
+PF-C,-10,17.505442179040983,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,-5,17.31006727301671,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,0,17.263658150099218,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,5,19.10137387929717,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,10,20.86842730391072,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,15,20.064413929125294,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,20,19.385556815192103,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,25,19.361493983247783,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-C,30,18.842637914873194,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\ckm\seed_10009104\metrics.csv
+PF-U,-10,22.614206731746282,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,-5,21.811936977067187,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,0,22.395532201820362,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,5,22.156114686707344,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,10,22.279856746919297,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,15,22.28958102973411,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,20,22.294811456580646,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,25,22.199117467079002,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,30,21.71460502484115,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009102\metrics.csv
+PF-U,-10,17.58253120347702,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,-5,17.829731284175068,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,0,17.23393210937502,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,5,17.172598132747225,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,10,17.36099546573435,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,15,17.360834629449528,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,20,17.578866560924023,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,25,17.466447087567456,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,30,17.31863182086575,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009103\metrics.csv
+PF-U,-10,17.66505183491002,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,-5,19.501698731580593,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,0,19.29550812599094,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,5,19.15604648477165,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,10,19.761292370812345,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,15,19.86188462685095,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,20,19.927746312789775,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,25,19.309560552452847,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv
+PF-U,30,19.0463335038318,legacy solver loop (diagnostics included),9_15\test\evaluations\eta1p5_a0p25_lo0p2_hi1\no-ckm\seed_10009104\metrics.csv

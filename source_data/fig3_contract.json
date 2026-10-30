@@ -1,0 +1,11 @@
+{
+  "claim": "In the post-hoc paired subset, conditioning mainly improves unobservable errors, whereas the conditional solver advantage mainly improves observable errors.",
+  "panels": [
+    "observable error",
+    "unobservable error"
+  ],
+  "source": "current_20260918/solver_seed_summary.csv",
+  "statistics": "linear mean over test channels and three inference seeds, then 10log10; LMMSE evaluated once",
+  "ticks": "5 dB SNR, 2 dB vertical",
+  "limits": "Post-hoc exclusion of scene1/41 and scene2/2094,2844; unresolved cause; no CI or causal isolation"
+}

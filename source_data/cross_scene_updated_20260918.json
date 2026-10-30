@@ -1,0 +1,1088 @@
+{
+  "sources": {
+    "cross_scene": "<paper_archive>/9_12/paper_straight_cross_scene_20260904",
+    "in_domain": "<local>/Documents/新journal/ICC_paper_20260909/source_data/factorial_test",
+    "pnpflow_fixed_update": "<paper_archive>/9_16/20260915_eta1p5_a0p25_t0p2_1"
+  },
+  "aggregation": "Full test: 2000 samples per site/SNR, equal linear SNR and site averaging; one inference seed.",
+  "folds": [
+    {
+      "scene": 1,
+      "methods": {
+        "PF-U": {
+          "source": "threefold_fixed_20260916/holdout_scene_01/no-ckm/results.json",
+          "aggregate_nmse_linear": 0.8744930755577257,
+          "aggregate_nmse_db": -0.5824362501775292,
+          "per_snr_nmse_db": {
+            "-10": 5.177519159258253,
+            "-5": 1.1758924703369575,
+            "0": -1.7899879005707393,
+            "5": -3.1250289405784764,
+            "10": -3.575936225413914,
+            "15": -3.7569788360377867,
+            "20": -3.777220971178659,
+            "25": -3.7715167264706806,
+            "30": -3.7939955660454676
+          },
+          "per_snr_nmse_linear": {
+            "-10": 3.2942148144245147,
+            "-5": 1.3109594153910875,
+            "0": 0.6622183486372233,
+            "5": 0.48696428011544046,
+            "10": 0.4389412311818451,
+            "15": 0.4210194081449881,
+            "20": 0.4190616347994655,
+            "25": 0.41961241330485793,
+            "30": 0.4174461340201087
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "time_min": 0.2,
+            "time_max": 1.0,
+            "step_scale": 1.5,
+            "alpha": 0.25,
+            "latent_samples": 1
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.576411634358888e-07,
+          "transfer_penalty_db": 0.8135029680731116,
+          "selection_protocol": "global fixed parameters; source-only model training/normalization, not source-only hyperparameter selection"
+        },
+        "PF-C": {
+          "source": "threefold_fixed_20260916/holdout_scene_01/ckm/results.json",
+          "aggregate_nmse_linear": 0.6846119654580382,
+          "aggregate_nmse_db": -1.6455551465331646,
+          "per_snr_nmse_db": {
+            "-10": 4.624420875219483,
+            "-5": 0.19673506075910188,
+            "0": -3.156453745059948,
+            "5": -4.48698523124879,
+            "10": -5.704764704272723,
+            "15": -5.488293230676432,
+            "20": -5.419935591314061,
+            "25": -5.6352596119333835,
+            "30": -5.787179085975715
+          },
+          "per_snr_nmse_linear": {
+            "-10": 2.900294423259795,
+            "-5": 1.046341633536853,
+            "0": 0.4834534073881805,
+            "5": 0.3558782750573009,
+            "10": 0.26885835034633054,
+            "15": 0.28259903657250107,
+            "20": 0.287082315787673,
+            "25": 0.273195812839549,
+            "30": 0.2638044343341608
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "time_min": 0.2,
+            "time_max": 1.0,
+            "step_scale": 1.5,
+            "alpha": 0.25,
+            "latent_samples": 1
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.576411634358888e-07,
+          "transfer_penalty_db": -0.8262534915125341,
+          "selection_protocol": "global fixed parameters; source-only model training/normalization, not source-only hyperparameter selection"
+        },
+        "FA-U": {
+          "source": "<paper_archive>/9_18/flowadmm_threefold_fixed/20260916_tau0p125_lo0_hi0p95_g0p25_device0/holdout_scene_01/no-ckm/subspace_per_sample.csv",
+          "aggregate_nmse_linear": 0.5631426479372507,
+          "aggregate_nmse_db": -2.4938158140974704,
+          "per_snr_nmse_db": {
+            "-10": 0.7827982597972044,
+            "-5": -0.4463316511765649,
+            "0": -1.8616958044091687,
+            "5": -2.9857016372234795,
+            "10": -3.544636476433185,
+            "15": -4.308374360237959,
+            "20": -4.654577715780998,
+            "25": -4.8005513031624245,
+            "30": -4.843995796968893
+          },
+          "per_snr_nmse_linear": {
+            "-10": 1.1975118673797698,
+            "-5": 0.9023329880852252,
+            "0": 0.6513740001795814,
+            "5": 0.502840021489188,
+            "10": 0.4421161223892123,
+            "15": 0.37081949999416247,
+            "20": 0.3424066797620617,
+            "25": 0.3310890896227211,
+            "30": 0.3277935625333339
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "tau": 0.125,
+            "time_min": 0.0,
+            "time_max": 0.95,
+            "gamma": 0.25,
+            "k_avg": 1,
+            "k_avg_schedule": "constant",
+            "k_avg_early": 1,
+            "k_avg_mid": 2,
+            "k_avg_late": 5,
+            "switch_frac": 0.5,
+            "switch_frac_2": 0.8,
+            "time_schedule": "t_k=time_min+((k+1)/K)^gamma*(time_max-time_min)"
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.576411634358888e-07,
+          "in_domain_same_scene_nmse_db": -2.8745478268332803,
+          "transfer_penalty_db": 0.40682633789736977,
+          "selection_protocol": "global fixed settings"
+        },
+        "FA-C": {
+          "source": "<paper_archive>/9_18/flowadmm_threefold_fixed/20260916_tau0p125_lo0_hi0p95_g0p25_device0/holdout_scene_01/ckm/subspace_per_sample.csv",
+          "aggregate_nmse_linear": 0.3755745111858058,
+          "aggregate_nmse_db": -4.253038893211926,
+          "per_snr_nmse_db": {
+            "-10": -0.7405331786362497,
+            "-5": -2.494880892008076,
+            "0": -4.0389067916418,
+            "5": -5.1325582575745035,
+            "10": -5.572869837160112,
+            "15": -5.9121781217362335,
+            "20": -6.021248698969054,
+            "25": -6.123597729074256,
+            "30": -6.106837442847672
+          },
+          "per_snr_nmse_linear": {
+            "-10": 0.8432312288237735,
+            "-5": 0.5630045579364523,
+            "0": 0.39455660757329314,
+            "5": 0.3067214680891484,
+            "10": 0.27714880878198894,
+            "15": 0.2563198190582916,
+            "20": 0.24996265568304807,
+            "25": 0.24414072341099383,
+            "30": 0.24508473131526262
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "tau": 0.125,
+            "time_min": 0.0,
+            "time_max": 0.95,
+            "gamma": 0.25,
+            "k_avg": 1,
+            "k_avg_schedule": "constant",
+            "k_avg_early": 1,
+            "k_avg_mid": 2,
+            "k_avg_late": 5,
+            "switch_frac": 0.5,
+            "switch_frac_2": 0.8,
+            "time_schedule": "t_k=time_min+((k+1)/K)^gamma*(time_max-time_min)"
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.576411634358888e-07,
+          "in_domain_same_scene_nmse_db": -4.553951054608556,
+          "transfer_penalty_db": 0.46215721358178996,
+          "selection_protocol": "global fixed settings"
+        },
+        "LMMSE": {
+          "source": "<paper_archive>/9_12/paper_straight_cross_scene_20260904/test/holdout_scene_01/classical/lmmse/results.json",
+          "aggregate_nmse_linear": 0.654192121728013,
+          "aggregate_nmse_db": -1.8429469027929288,
+          "per_snr_nmse_db": {
+            "-10": 1.8524838613273353,
+            "-5": 0.00796921286220344,
+            "0": -1.509419596274719,
+            "5": -2.595942351667656,
+            "10": -3.2925105845364055,
+            "15": -3.699013782398353,
+            "20": -3.9055177520227033,
+            "25": -3.989157781087123,
+            "30": -4.0199963139062165
+          },
+          "per_snr_nmse_linear": {
+            "-10": 1.531963387310505,
+            "-5": 1.0018366636782885,
+            "0": 0.7064119548946619,
+            "5": 0.5500545542538166,
+            "10": 0.46854244720563293,
+            "15": 0.426676399609074,
+            "20": 0.40686302600614727,
+            "25": 0.3991022919956595,
+            "30": 0.3962783705983311
+          },
+          "statistics": {
+            "artifact": "<author_runs>/7_14/MIMO_ckmsrf/runs/studies/straight_flow/paper_straight_cross_scene_20260904/statistics/holdout_scene_01/lmmse_train_only.pt",
+            "estimator": "per_receiver_circular_complex_gaussian",
+            "split": "train",
+            "sampling": "random_tf",
+            "passes": 1,
+            "shrinkage": 0.05,
+            "jitter": 1e-06,
+            "groups": {
+              "global": {
+                "count": 20000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              },
+              "scene_2": {
+                "count": 10000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              },
+              "scene_3": {
+                "count": 10000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              }
+            }
+          }
+        }
+      },
+      "comparisons": {
+        "FA-U minus FA-C": {
+          "gain_db": 1.5170940796562937,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "PF-U minus PF-C": {
+          "gain_db": 1.7472069313498086,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "PF-C minus FA-C": {
+          "gain_db": 1.0692174496710094,
+          "better_snr_for_second": [
+            -10,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": [
+            -5
+          ]
+        },
+        "PF-U minus FA-U": {
+          "gain_db": 1.2993303013645243,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": [
+            0
+          ]
+        },
+        "LMMSE minus FA-C": {
+          "gain_db": 1.9882287209940648,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "LMMSE minus FA-U": {
+          "gain_db": 0.47113464133777105,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        }
+      }
+    },
+    {
+      "scene": 2,
+      "methods": {
+        "PF-U": {
+          "source": "threefold_fixed_20260916/holdout_scene_02/no-ckm/results.json",
+          "aggregate_nmse_linear": 0.9213655778824145,
+          "aggregate_nmse_db": -0.35568016974778394,
+          "per_snr_nmse_db": {
+            "-10": 5.296652461755435,
+            "-5": 1.0378343974854103,
+            "0": -1.5927600357407772,
+            "5": -2.7261873414872544,
+            "10": -3.109484751742947,
+            "15": -3.107680274511467,
+            "20": -3.2000445090917014,
+            "25": -3.2235594388317153,
+            "30": -3.210807012936718
+          },
+          "per_snr_nmse_linear": {
+            "-10": 3.38583075979352,
+            "-5": 1.2699406933933497,
+            "0": 0.6929852588623762,
+            "5": 0.5338033142089844,
+            "10": 0.4887103366423398,
+            "15": 0.48891343613900246,
+            "20": 0.4786251870607957,
+            "25": 0.47604066819138824,
+            "30": 0.4774405466499738
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "time_min": 0.2,
+            "time_max": 1.0,
+            "step_scale": 1.5,
+            "alpha": 0.25,
+            "latent_samples": 1
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.389546753596505e-07,
+          "transfer_penalty_db": 0.36170176255951114,
+          "selection_protocol": "global fixed parameters; source-only model training/normalization, not source-only hyperparameter selection"
+        },
+        "PF-C": {
+          "source": "threefold_fixed_20260916/holdout_scene_02/ckm/results.json",
+          "aggregate_nmse_linear": 0.6827619626071925,
+          "aggregate_nmse_db": -1.6573068188939426,
+          "per_snr_nmse_db": {
+            "-10": 4.351816982136523,
+            "-5": -0.06541701163937783,
+            "0": -3.091814443204661,
+            "5": -4.176639868477593,
+            "10": -4.738622273536864,
+            "15": -5.119989949213305,
+            "20": -5.189873987354715,
+            "25": -5.3146169174457105,
+            "30": -4.9114684908798125
+          },
+          "per_snr_nmse_linear": {
+            "-10": 2.723840658187866,
+            "-5": 0.9850500532854348,
+            "0": 0.49070282210409644,
+            "5": 0.38223989504016936,
+            "10": 0.335844138270244,
+            "15": 0.30761039336957036,
+            "20": 0.30270012567332016,
+            "25": 0.2941293127941899,
+            "30": 0.32274026473984124
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "time_min": 0.2,
+            "time_max": 1.0,
+            "step_scale": 1.5,
+            "alpha": 0.25,
+            "latent_samples": 1
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.389546753596505e-07,
+          "transfer_penalty_db": -1.733351797511243,
+          "selection_protocol": "global fixed parameters; source-only model training/normalization, not source-only hyperparameter selection"
+        },
+        "FA-U": {
+          "source": "<paper_archive>/9_18/flowadmm_threefold_fixed/20260916_tau0p125_lo0_hi0p95_g0p25_device0/holdout_scene_02/no-ckm/subspace_per_sample.csv",
+          "aggregate_nmse_linear": 0.5213358388336169,
+          "aggregate_nmse_db": -2.8288241880465774,
+          "per_snr_nmse_db": {
+            "-10": 0.18637172099536703,
+            "-5": -0.6095539057139018,
+            "0": -1.9013698411647044,
+            "5": -3.283146507960396,
+            "10": -4.234739288830561,
+            "15": -4.70897508033383,
+            "20": -4.884563366265807,
+            "25": -5.064594622089368,
+            "30": -5.051352392252012
+          },
+          "per_snr_nmse_linear": {
+            "-10": 1.04384778043814,
+            "-5": 0.8690496908836066,
+            "0": 0.6454506104514003,
+            "5": 0.46955378881283105,
+            "10": 0.3771603856338188,
+            "15": 0.33814462773036214,
+            "20": 0.32474589003436266,
+            "25": 0.3115591697068885,
+            "30": 0.31251060581114143
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "tau": 0.125,
+            "time_min": 0.0,
+            "time_max": 0.95,
+            "gamma": 0.25,
+            "k_avg": 1,
+            "k_avg_schedule": "constant",
+            "k_avg_early": 1,
+            "k_avg_mid": 2,
+            "k_avg_late": 5,
+            "switch_frac": 0.5,
+            "switch_frac_2": 0.8,
+            "time_schedule": "t_k=time_min+((k+1)/K)^gamma*(time_max-time_min)"
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.389546753596505e-07,
+          "in_domain_same_scene_nmse_db": -3.4483045331370317,
+          "transfer_penalty_db": 0.5533059224756665,
+          "selection_protocol": "global fixed settings"
+        },
+        "FA-C": {
+          "source": "<paper_archive>/9_18/flowadmm_threefold_fixed/20260916_tau0p125_lo0_hi0p95_g0p25_device0/holdout_scene_02/ckm/subspace_per_sample.csv",
+          "aggregate_nmse_linear": 0.3091643603470487,
+          "aggregate_nmse_db": -5.098105761919953,
+          "per_snr_nmse_db": {
+            "-10": -1.7309982876883319,
+            "-5": -3.252772345033335,
+            "0": -4.849323200961847,
+            "5": -5.586465995289202,
+            "10": -6.329911519040237,
+            "15": -6.6858859411713265,
+            "20": -6.972353948053055,
+            "25": -7.125057188550179,
+            "30": -7.15091192928257
+          },
+          "per_snr_nmse_linear": {
+            "-10": 0.6712745331833139,
+            "-5": 0.47284931638371197,
+            "0": 0.3273917112145573,
+            "5": 0.2762825148319826,
+            "10": 0.2328138689501211,
+            "15": 0.2144921516859904,
+            "20": 0.20080041460786016,
+            "25": 0.19386271076509728,
+            "30": 0.19271202150080352
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "tau": 0.125,
+            "time_min": 0.0,
+            "time_max": 0.95,
+            "gamma": 0.25,
+            "k_avg": 1,
+            "k_avg_schedule": "constant",
+            "k_avg_early": 1,
+            "k_avg_mid": 2,
+            "k_avg_late": 5,
+            "switch_frac": 0.5,
+            "switch_frac_2": 0.8,
+            "time_schedule": "t_k=time_min+((k+1)/K)^gamma*(time_max-time_min)"
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.389546753596505e-07,
+          "in_domain_same_scene_nmse_db": -5.049768624683423,
+          "transfer_penalty_db": -0.2983527436389313,
+          "selection_protocol": "global fixed settings"
+        },
+        "LMMSE": {
+          "source": "<paper_archive>/9_12/paper_straight_cross_scene_20260904/test/holdout_scene_02/classical/lmmse/results.json",
+          "aggregate_nmse_linear": 0.6369996463799228,
+          "aggregate_nmse_db": -1.9586080875615797,
+          "per_snr_nmse_db": {
+            "-10": 1.1054034148687895,
+            "-5": -0.23198609871073927,
+            "0": -1.5261868767372548,
+            "5": -2.5141858233588503,
+            "10": -3.1230850931363614,
+            "15": -3.45338516224716,
+            "20": -3.607090844483773,
+            "25": -3.671537571889175,
+            "30": -3.6948365848753806
+          },
+          "per_snr_nmse_linear": {
+            "-10": 1.2898533664345742,
+            "-5": 0.9479848354011774,
+            "0": 0.7036898913234473,
+            "5": 0.5605074864700437,
+            "10": 0.4871822879835963,
+            "15": 0.4515038768798113,
+            "20": 0.4358037024475634,
+            "25": 0.4293843810297549,
+            "30": 0.42708698944933715
+          },
+          "statistics": {
+            "artifact": "<author_runs>/7_14/MIMO_ckmsrf/runs/studies/straight_flow/paper_straight_cross_scene_20260904/statistics/holdout_scene_02/lmmse_train_only.pt",
+            "estimator": "per_receiver_circular_complex_gaussian",
+            "split": "train",
+            "sampling": "random_tf",
+            "passes": 1,
+            "shrinkage": 0.05,
+            "jitter": 1e-06,
+            "groups": {
+              "global": {
+                "count": 20000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              },
+              "scene_1": {
+                "count": 10000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              },
+              "scene_3": {
+                "count": 10000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              }
+            }
+          }
+        }
+      },
+      "comparisons": {
+        "FA-U minus FA-C": {
+          "gain_db": 2.0999505651564467,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "PF-U minus PF-C": {
+          "gain_db": 0.15037686710777964,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            10,
+            20
+          ],
+          "worse_snr_for_second": [
+            5,
+            15,
+            25,
+            30
+          ]
+        },
+        "PF-C minus FA-C": {
+          "gain_db": 3.1550456083630563,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "PF-U minus FA-U": {
+          "gain_db": 1.205471910314389,
+          "better_snr_for_second": [
+            -10,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": [
+            -5,
+            0
+          ]
+        },
+        "LMMSE minus FA-C": {
+          "gain_db": 2.879588574743529,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "LMMSE minus FA-U": {
+          "gain_db": 0.7796380095870821,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        }
+      }
+    },
+    {
+      "scene": 3,
+      "methods": {
+        "PF-U": {
+          "source": "threefold_fixed_20260916/holdout_scene_03/no-ckm/results.json",
+          "aggregate_nmse_linear": 0.8831449492099669,
+          "aggregate_nmse_db": -0.539680104929109,
+          "per_snr_nmse_db": {
+            "-10": 5.572621978381066,
+            "-5": 1.254500167611614,
+            "0": -1.8643619700792664,
+            "5": -3.443216923459706,
+            "10": -4.0371898565919775,
+            "15": -4.184094692266182,
+            "20": -4.222013771341484,
+            "25": -4.287491628787061,
+            "30": -4.262825138047152
+          },
+          "per_snr_nmse_linear": {
+            "-10": 3.607964019149542,
+            "-5": 1.3349039457440377,
+            "0": 0.6509742396250368,
+            "5": 0.45256223201192913,
+            "10": 0.39471262198779733,
+            "15": 0.38158432907797396,
+            "20": 0.37826714611425993,
+            "25": 0.37260685207881034,
+            "30": 0.3747291571003152
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "time_min": 0.2,
+            "time_max": 1.0,
+            "step_scale": 1.5,
+            "alpha": 0.25,
+            "latent_samples": 1
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.825671984513055e-07,
+          "transfer_penalty_db": 0.030867577995676854,
+          "selection_protocol": "global fixed parameters; source-only model training/normalization, not source-only hyperparameter selection"
+        },
+        "PF-C": {
+          "source": "threefold_fixed_20260916/holdout_scene_03/ckm/results.json",
+          "aggregate_nmse_linear": 0.8640021188087348,
+          "aggregate_nmse_db": -0.6348519249123006,
+          "per_snr_nmse_db": {
+            "-10": 5.368994549634973,
+            "-5": 1.07962864991499,
+            "0": -2.0322841813240697,
+            "5": -3.5329554727239176,
+            "10": -3.950842929277631,
+            "15": -4.070300955590499,
+            "20": -4.156960446939586,
+            "25": -4.1055629508340115,
+            "30": -3.8234129505474614
+          },
+          "per_snr_nmse_linear": {
+            "-10": 3.4427021833248435,
+            "-5": 1.2822209397219122,
+            "0": 0.6262843823935836,
+            "5": 0.44330686085671184,
+            "10": 0.40263887790124864,
+            "15": 0.3917147312820889,
+            "20": 0.3839758896525018,
+            "25": 0.38854712957143783,
+            "30": 0.41462807457428424
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "time_min": 0.2,
+            "time_max": 1.0,
+            "step_scale": 1.5,
+            "alpha": 0.25,
+            "latent_samples": 1
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.825671984513055e-07,
+          "transfer_penalty_db": 1.5486461964954228,
+          "selection_protocol": "global fixed parameters; source-only model training/normalization, not source-only hyperparameter selection"
+        },
+        "FA-U": {
+          "source": "<paper_archive>/9_18/flowadmm_threefold_fixed/20260916_tau0p125_lo0_hi0p95_g0p25_device0/holdout_scene_03/no-ckm/subspace_per_sample.csv",
+          "aggregate_nmse_linear": 0.4513411648026926,
+          "aggregate_nmse_db": -3.4549505462219128,
+          "per_snr_nmse_db": {
+            "-10": -1.0525890742559165,
+            "-5": -1.8551998321032257,
+            "0": -2.9286618673754914,
+            "5": -3.70239137639117,
+            "10": -4.012377248726452,
+            "15": -4.503214554986623,
+            "20": -4.880095923649869,
+            "25": -5.0964987003644495,
+            "30": -5.182173362943951
+          },
+          "per_snr_nmse_linear": {
+            "-10": 0.7847676508873701,
+            "-5": 0.6523490237444639,
+            "0": 0.5094878284428269,
+            "5": 0.4263446939466521,
+            "10": 0.39697419355856256,
+            "15": 0.3545508611127734,
+            "20": 0.3250801171846688,
+            "25": 0.30927878457214686,
+            "30": 0.303237329774769
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "tau": 0.125,
+            "time_min": 0.0,
+            "time_max": 0.95,
+            "gamma": 0.25,
+            "k_avg": 1,
+            "k_avg_schedule": "constant",
+            "k_avg_early": 1,
+            "k_avg_mid": 2,
+            "k_avg_late": 5,
+            "switch_frac": 0.5,
+            "switch_frac_2": 0.8,
+            "time_schedule": "t_k=time_min+((k+1)/K)^gamma*(time_max-time_min)"
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.825671984513055e-07,
+          "in_domain_same_scene_nmse_db": -3.4333366791628617,
+          "transfer_penalty_db": 0.0011296718322615362,
+          "selection_protocol": "global fixed settings"
+        },
+        "FA-C": {
+          "source": "<paper_archive>/9_18/flowadmm_threefold_fixed/20260916_tau0p125_lo0_hi0p95_g0p25_device0/holdout_scene_03/ckm/subspace_per_sample.csv",
+          "aggregate_nmse_linear": 0.3381912075595206,
+          "aggregate_nmse_db": -4.708376875662482,
+          "per_snr_nmse_db": {
+            "-10": -2.4205219223974304,
+            "-5": -3.1649611323873406,
+            "0": -4.280881738367736,
+            "5": -4.982264744560169,
+            "10": -5.351388951531883,
+            "15": -5.788337568290586,
+            "20": -6.1774108099773795,
+            "25": -5.9846306650052,
+            "30": -6.034636345681552
+          },
+          "per_snr_nmse_linear": {
+            "-10": 0.5727271981714294,
+            "-5": 0.4825072982870042,
+            "0": 0.3731743853436783,
+            "5": 0.3175217836704105,
+            "10": 0.2916494117779657,
+            "15": 0.2637340737776831,
+            "20": 0.2411342601785436,
+            "25": 0.25207915450027213,
+            "30": 0.24919330232869832
+          },
+          "num_samples_per_snr": 2000,
+          "selected_parameters": {
+            "pnp_iterations": 40,
+            "tau": 0.125,
+            "time_min": 0.0,
+            "time_max": 0.95,
+            "gamma": 0.25,
+            "k_avg": 1,
+            "k_avg_schedule": "constant",
+            "k_avg_early": 1,
+            "k_avg_mid": 2,
+            "k_avg_late": 5,
+            "switch_frac": 0.5,
+            "switch_frac_2": 0.8,
+            "time_schedule": "t_k=time_min+((k+1)/K)^gamma*(time_max-time_min)"
+          },
+          "observation_seed": 10009102,
+          "latent_seed": 10009102,
+          "batch_size": 16,
+          "normalization_h_rms": 2.825671984513055e-07,
+          "in_domain_same_scene_nmse_db": -7.234215570013514,
+          "transfer_penalty_db": 4.0139221262713685,
+          "selection_protocol": "global fixed settings"
+        },
+        "LMMSE": {
+          "source": "<paper_archive>/9_12/paper_straight_cross_scene_20260904/test/holdout_scene_03/classical/lmmse/results.json",
+          "aggregate_nmse_linear": 0.631049290040301,
+          "aggregate_nmse_db": -1.9993671752846829,
+          "per_snr_nmse_db": {
+            "-10": -0.04803403372518368,
+            "-5": -0.5810372983640415,
+            "0": -1.3843741369026854,
+            "5": -2.1485625813437452,
+            "10": -2.6857736089055018,
+            "15": -2.993234216374479,
+            "20": -3.144307284747079,
+            "25": -3.2064777126910418,
+            "30": -3.2294483318740683
+          },
+          "per_snr_nmse_linear": {
+            "-10": 0.9890006946325303,
+            "-5": 0.874774813130498,
+            "0": 0.7270471666529774,
+            "5": 0.6097386738583446,
+            "10": 0.5387938614562153,
+            "15": 0.501968631323427,
+            "20": 0.4848074349798262,
+            "25": 0.47791672448534517,
+            "30": 0.4753956098435447
+          },
+          "statistics": {
+            "artifact": "<author_runs>/7_14/MIMO_ckmsrf/runs/studies/straight_flow/paper_straight_cross_scene_20260904/statistics/holdout_scene_03/lmmse_train_only.pt",
+            "estimator": "per_receiver_circular_complex_gaussian",
+            "split": "train",
+            "sampling": "random_tf",
+            "passes": 1,
+            "shrinkage": 0.05,
+            "jitter": 1e-06,
+            "groups": {
+              "global": {
+                "count": 20000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              },
+              "scene_1": {
+                "count": 10000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              },
+              "scene_2": {
+                "count": 10000,
+                "mean_shape": [
+                  16,
+                  64
+                ],
+                "covariance_shape": [
+                  16,
+                  64,
+                  64
+                ]
+              }
+            }
+          }
+        }
+      },
+      "comparisons": {
+        "FA-U minus FA-C": {
+          "gain_db": -0.23059367269170128,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0
+          ],
+          "worse_snr_for_second": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        "PF-U minus PF-C": {
+          "gain_db": -0.44600896822893876,
+          "better_snr_for_second": [],
+          "worse_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        "PF-C minus FA-C": {
+          "gain_db": 1.8094515046799713,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "PF-U minus FA-U": {
+          "gain_db": 1.5940362091427338,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "LMMSE minus FA-C": {
+          "gain_db": 1.454788869600007,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        },
+        "LMMSE minus FA-U": {
+          "gain_db": 1.6853825422917084,
+          "better_snr_for_second": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "worse_snr_for_second": []
+        }
+      }
+    }
+  ],
+  "protocol_note": "Both solvers globally fixed K40; full target tests, one seed; new full-test in-domain FA references average three seeds. PF per-sample pairing not independently verified.",
+  "macro": {
+    "FA-C": -4.672753055648323,
+    "FA-U": -2.9078103441803793,
+    "PF-C": -1.2854848796785736,
+    "PF-U": -0.4914795708382772,
+    "LMMSE": -1.9331340538349526
+  }
+}

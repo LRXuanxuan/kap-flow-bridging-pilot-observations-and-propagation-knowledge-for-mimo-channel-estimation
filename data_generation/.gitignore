@@ -1,0 +1,11 @@
+# Generated datasets and MATLAB/Python outputs are never committed.
+output*/
+*.mat
+*.h5
+*.hdf5
+
+# Python
+__pycache__/
+*.py[cod]
+*.asv
+*.log

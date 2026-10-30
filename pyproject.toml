@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kap-flow"
+version = "1.0.0"
+description = "Official code for KAP-Flow: Bridging Pilot Observations and Propagation Knowledge for MIMO Channel Estimation"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Ruixuan Li" },
+  { name = "Shuai Wang" },
+  { name = "Lingxiang Li" },
+  { name = "Zhi Chen" },
+]
+keywords = [
+  "MIMO channel estimation",
+  "flow matching",
+  "KAP-Flow",
+  "CKM-conditioned prior",
+  "plug-and-play",
+]
+dependencies = [
+  "torch>=2.1",
+  "numpy>=1.24",
+  "h5py>=3.9",
+  "PyYAML>=6.0",
+  "accelerate>=0.27",
+  "tqdm>=4.66",
+  "tensorboard>=2.14",
+]
+
+[project.optional-dependencies]
+mat = ["hdf5storage>=0.1.19"]
+dev = ["pytest>=7.4"]
+plots = ["matplotlib>=3.7"]
+
+[project.scripts]
+journal-flow = "journal_flow.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/LRXuanxuan/kap-flow-bridging-pilot-observations-and-propagation-knowledge-for-mimo-channel-estimation"
+Repository = "https://github.com/LRXuanxuan/kap-flow-bridging-pilot-observations-and-propagation-knowledge-for-mimo-channel-estimation"
+Issues = "https://github.com/LRXuanxuan/kap-flow-bridging-pilot-observations-and-propagation-knowledge-for-mimo-channel-estimation/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+# Import the checkout without installing it (also works in CI).
+pythonpath = ["src", "."]

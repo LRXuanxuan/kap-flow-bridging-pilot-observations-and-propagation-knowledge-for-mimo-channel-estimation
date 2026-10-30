@@ -1,0 +1,154 @@
+{
+  "methods": [
+    {
+      "method": "LS",
+      "kind": "ls",
+      "checkpoint": "checkpoints/main/straight/ckm/best_nmse.pt"
+    },
+    {
+      "method": "LMMSE",
+      "kind": "lmmse",
+      "checkpoint": "checkpoints/main/straight/ckm/best_nmse.pt",
+      "statistics": "checkpoints/baselines_statistics/in_domain/lmmse_train_only.pt"
+    },
+    {
+      "method": "RC-U",
+      "kind": "rc",
+      "checkpoint": "checkpoints/baselines/rcflow_no_ckm/best_nmse.pt",
+      "parameters": {
+        "steps": 20,
+        "outer_loops": 1,
+        "pbg_steps": 0,
+        "pbg_step_size": 0.15,
+        "fig_plus_mix": 0.0,
+        "lambda_power": 1.0,
+        "beta_power": 1.0
+      },
+      "reference": "7_17/20260717/baseline/results.json"
+    },
+    {
+      "method": "RC-C",
+      "kind": "rc",
+      "checkpoint": "checkpoints/baselines/rcflow_ckm/best_nmse.pt",
+      "parameters": {
+        "steps": 20,
+        "outer_loops": 1,
+        "pbg_steps": 0,
+        "pbg_step_size": 0.15,
+        "fig_plus_mix": 0.0,
+        "lambda_power": 1.0,
+        "beta_power": 1.0
+      },
+      "reference": "7_17/20260717/prior/results.json"
+    },
+    {
+      "method": "RC-S",
+      "kind": "rc",
+      "checkpoint": "checkpoints/baselines/srf_ckm/best_nmse.pt",
+      "parameters": {
+        "steps": 20,
+        "outer_loops": 1,
+        "pbg_steps": 0,
+        "pbg_step_size": 0.15,
+        "fig_plus_mix": 0.0,
+        "lambda_power": 1.0,
+        "beta_power": 1.0
+      },
+      "reference": "7_17/20260717/full/results.json"
+    },
+    {
+      "method": "CM-U",
+      "kind": "cm",
+      "checkpoint": "checkpoints/baselines/pnp_cm_no_ckm/best_nmse.pt",
+      "parameters": {
+        "iterations": 4,
+        "rho": 1.0,
+        "lambda_reg": 0.1,
+        "adaptive_rho": false,
+        "momentum": 0.0,
+        "denoiser_relaxation": 1.0,
+        "dual_damping": 1.0,
+        "final_data_step": false
+      },
+      "reference": "7_18/test_cm_pnp_no_ckm_fixed_k4_r1_l01/results.json"
+    },
+    {
+      "method": "CM-C",
+      "kind": "cm",
+      "checkpoint": "checkpoints/baselines/pnp_cm_ckm/best_nmse.pt",
+      "parameters": {
+        "iterations": 4,
+        "rho": 1.0,
+        "lambda_reg": 0.1,
+        "adaptive_rho": false,
+        "momentum": 0.0,
+        "denoiser_relaxation": 1.0,
+        "dual_damping": 1.0,
+        "final_data_step": false
+      },
+      "reference": "7_17/test_cm_pnp_fixed_k4_r1_l01/results.json"
+    },
+    {
+      "method": "PF-U",
+      "kind": "pf",
+      "checkpoint": "checkpoints/main/straight/no_ckm/best_nmse.pt",
+      "parameters": {
+        "iterations": 40,
+        "step_scale": 1.5,
+        "alpha": 0.25,
+        "time_min": 0.2,
+        "time_max": 1.0,
+        "latent_samples": 1,
+        "latent_std": 1.0,
+        "initialization": "ls"
+      }
+    },
+    {
+      "method": "PF-C",
+      "kind": "pf",
+      "checkpoint": "checkpoints/main/straight/ckm/best_nmse.pt",
+      "parameters": {
+        "iterations": 40,
+        "step_scale": 1.5,
+        "alpha": 0.25,
+        "time_min": 0.2,
+        "time_max": 1.0,
+        "latent_samples": 1,
+        "latent_std": 1.0,
+        "initialization": "ls"
+      }
+    },
+    {
+      "method": "FA-U",
+      "kind": "fa",
+      "checkpoint": "checkpoints/main/straight/no_ckm/best_nmse.pt",
+      "parameters": {
+        "iterations": 40,
+        "tau": 0.125,
+        "time_min": 0.0,
+        "time_max": 0.95,
+        "gamma": 0.25,
+        "k_avg": 1,
+        "k_avg_schedule": "constant",
+        "latent_std": 1.0,
+        "initialization": "ls"
+      }
+    },
+    {
+      "method": "FA-C",
+      "kind": "fa",
+      "checkpoint": "checkpoints/main/straight/ckm/best_nmse.pt",
+      "parameters": {
+        "iterations": 40,
+        "tau": 0.125,
+        "time_min": 0.0,
+        "time_max": 0.95,
+        "gamma": 0.25,
+        "k_avg": 1,
+        "k_avg_schedule": "constant",
+        "latent_std": 1.0,
+        "initialization": "ls"
+      }
+    }
+  ]
+}

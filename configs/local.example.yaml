@@ -1,0 +1,9 @@
+# Copy this file to configs/local.yaml (ignored by git) and edit only machine paths.
+# Every path may be absolute or repo-relative; environment variables are expanded.
+# Resolution order: defaults < experiment YAML < hardware profile < this file
+#                   < CKMSRF_* environment variables < command-line flags.
+paths:
+  # Default dataset layout is data/ckm_srf_64x16_h5 (see docs/DATA.md).
+  # The CKMSRF_DATA_ROOT environment variable or --data-root overrides this.
+  data_root: data/ckm_srf_64x16_h5
+  run_root: runs

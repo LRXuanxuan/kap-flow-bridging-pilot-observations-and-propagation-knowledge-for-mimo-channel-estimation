@@ -1,0 +1,23 @@
+# SHA256 checksums for the KAP-Flow checkpoint files.
+# Paths are relative to the checkpoints/ directory, after the files were
+# installed with:  python tools/download_checkpoints.py --dest checkpoints/
+# Verify with:     cd checkpoints && sha256sum -c SHA256SUMS.txt
+# (Windows: use Git Bash/WSL, or the download script which verifies
+#  automatically; per-asset SHA256 are recorded in MANIFEST.json.)
+f2b3520b16e3ba35eb30e637741c7a5266960738a2e7a2c0741b7d7af4ee7a74  main/straight/ckm/best_nmse.pt
+79877c3d67001c847bbfef3b1384bced9d9382324ff5c52187664070bd66e610  main/straight/no_ckm/best_nmse.pt
+ef715566ca0359a53a055b4c8a5904cce5fb29142c95d73e1ceeba6260021939  main/threefold/holdout_01/ckm/best_nmse.pt
+5e35e8a4adddcc6a039caf221ca4be92990c7f7f7d1105e2e1911a8c7a9d295b  main/threefold/holdout_01/no_ckm/best_nmse.pt
+c0c60040a0fc0b26f1d2eb60e38aa6e17d07e548388561f81cbd4c4930d701a3  main/threefold/holdout_02/ckm/best_nmse.pt
+604362bc5137fb1d6930cd1da4210a36e8228f954c340d440cfb82b3fcb2377c  main/threefold/holdout_02/no_ckm/best_nmse.pt
+68e8e6f08bbc93f220c7c83b18856e4e540b027b54a2d23dd68e0dae1f1487f9  main/threefold/holdout_03/ckm/best_nmse.pt
+bc5ab44367ba762d1b94d29facf4d716841b22b8c6f638536382a841ad863612  main/threefold/holdout_03/no_ckm/best_nmse.pt
+a04b9f447d2f555800122aa86c9928884b2419f285c558559b1b7e54e41fecf3  baselines/rcflow_no_ckm/best_nmse.pt
+88cf42bf7231c18990999512f6b259f71dafab137d972cc1ec2d997f45a5cc9d  baselines/rcflow_ckm/best_nmse.pt
+0796fc56a6d78ad585578b69bd14293e702d886dbec5078db06cac2193e96ac3  baselines/srf_ckm/best_nmse.pt
+4bca4f3cbe3fb8ddf15043b80b110ab0f36a42ac56cc6ad556f404791acfd9ef  baselines/pnp_cm_ckm/best_nmse.pt
+aa1ed3b3f8bedbf51383c15cbda1495e3241c7e529fe53017ddc0418fa03558b  baselines/pnp_cm_no_ckm/best_nmse.pt
+f7bee570d3a58d79e8acb23641858cea344114ce2291d25dda74979a25e9cc3c  baselines_statistics/in_domain/lmmse_train_only.pt
+baa1a19c1ad17240fcb36730c98ceca72d29c4150bdc59f32cb7160b8d746bfe  baselines_statistics/holdout_01/lmmse_train_only.pt
+f3614b077511e92b44231bdea91b9f5c052681cfca60990f46ce5672e6339a97  baselines_statistics/holdout_02/lmmse_train_only.pt
+d0e2d40ae17ef4da72ff25a2798b15e085afac553a74f77e1af27497473ca3bc  baselines_statistics/holdout_03/lmmse_train_only.pt

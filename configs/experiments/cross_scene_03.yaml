@@ -1,0 +1,25 @@
+experiment:
+  name: cross_scene_03
+  description: Train on scenes 01/02 and test environment generalization on scene 03
+
+data:
+  backend: auto
+  index_file: indices/{split}.json
+  sampling: random_tf
+  train_scenes: [scene_01, scene_02]
+  validation_scenes: [scene_01, scene_02]
+  test_scenes: [scene_03]
+  include_observation: true
+  normalization:
+    mode: global_rms
+    stats_file: normalization_cross_scene_03.json
+
+model:
+  condition:
+    enabled: true
+    dropout_prob: 0.10
+
+loss:
+  gm_nll_weight: 1.0
+  reconstruction_weight: 0.05
+  physics_weight: 0.01

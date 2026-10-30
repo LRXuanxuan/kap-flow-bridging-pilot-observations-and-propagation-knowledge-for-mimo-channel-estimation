@@ -1,0 +1,32 @@
+experiment:
+  name: baseline_no_ckm
+  description: Unconditional GMFlow baseline on the CKM-SRF dataset
+
+data:
+  backend: auto
+  index_file: indices/{split}.json
+  sampling: random_tf
+  train_scenes: [scene_01, scene_02, scene_03]
+  validation_scenes: [scene_01, scene_02, scene_03]
+  test_scenes: [scene_01, scene_02, scene_03]
+  include_observation: false
+  normalization:
+    mode: global_rms
+    stats_file: normalization.json
+
+model:
+  dim: 32
+  dim_mults: [1, 2, 4]
+  groups: 8
+  num_components: 2
+  condition:
+    enabled: false
+
+loss:
+  gm_nll_weight: 1.0
+  reconstruction_weight: 0.0
+  physics_weight: 0.0
+
+training:
+  epochs: 200
+  ema_decay: 0.999

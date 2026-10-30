@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# PyTorch weights are distributed as GitHub Release assets (see checkpoints/README.md).
+# Only the lightweight registry files under checkpoints/ are tracked.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+!checkpoints/MANIFEST.json
+!checkpoints/README.md
+!checkpoints/SHA256SUMS.txt
+
+# Experiment outputs / run directories
+outputs/
+runs/
+main/runs/
+baselines/runs/
+main/results/
+baselines/results/
+results/*
+# keep small markdown tables (e.g. results/table1.md) that document the paper
+!results/*.md
+wandb/
+tensorboard/
+*.log
+
+# Datasets (generated or downloaded separately, see docs/DATA.md)
+data/
+*.mat
+*.h5
+*.hdf5
+*.hdf
+*.npy
+*.npz
+*.pkl
+
+# Generated timing / study outputs
+timing/outputs/
+analysis/
+
+# Local machine-specific overrides
+configs/local.yaml
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

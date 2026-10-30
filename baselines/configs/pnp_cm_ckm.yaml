@@ -1,0 +1,144 @@
+experiment:
+  name: ckmcm_prior
+  description: CKM-conditioned supervised consistency prior for MIMO channels
+paths:
+  data_root: data
+  run_root: runs
+data:
+  backend: plain_h5
+  index_file: indices/{split}.json
+  sampling: random_tf
+  validation_sampling: fixed
+  test_sampling: fixed
+  nr: 16
+  nt: 64
+  n_subcarriers: 48
+  n_snapshots: 8
+  pilot_length: 19
+  include_observation: false
+  observation:
+    enabled: true
+    noise_mode: stored
+    deterministic: true
+    base_seed: 9102
+  normalization:
+    mode: global_rms
+    stats_file: normalization.json
+  train_scenes:
+  - scene_01
+  - scene_02
+  - scene_03
+  validation_scenes:
+  - scene_01
+  - scene_02
+  - scene_03
+  test_scenes:
+  - scene_01
+  - scene_02
+  - scene_03
+model:
+  type: consistency
+  in_channels: 2
+  dim: 32
+  dim_mults:
+  - 1
+  - 2
+  - 4
+  groups: 8
+  num_components: 2
+  condition:
+    enabled: true
+    embed_dim: 128
+    scalar_dim: 6
+    state_dim: 8
+    tx_beam_dim: 64
+    rx_beam_dim: 16
+    adp_shape:
+    - 16
+    - 16
+    - 12
+    dropout_prob: 0.1
+    use_scalar: true
+    use_state: true
+    use_beam: true
+    use_adp: true
+  out_channels: 2
+flow:
+  time_low: 0.0
+  time_high: 1.0
+  transition_ratio: 0.5
+  noise_std: 1.0
+loss:
+  type: consistency
+  gm_nll_weight: 1.0
+  reconstruction_weight: 0.05
+  physics_weight: 0.0
+consistency:
+  sigma_min: 0.002
+  sigma_max: 2.0
+  sigma_data: 1.0
+  rho: 7.0
+  num_scales: 40
+  endpoint_weight: 1.0
+  consistency_weight: 1.0
+  pseudo_huber_c: 0.03
+sampling:
+  solver: pnp_cm
+  steps: 20
+  outer_loops: 1
+  lambda_power: 1.0
+  beta_power: 1.0
+  pbg_steps: 0
+  pbg_step_size: 0.15
+  fig_plus_mix: 0.0
+  pnp_iterations: 4
+  pnp_rho: 1.0
+  pnp_lambda: 0.1
+  pnp_adaptive_rho: false
+  pnp_rho_candidate_factors:
+  - 0.5
+  - 1.0
+  - 2.0
+  pnp_rho_min: 1.0e-06
+  pnp_rho_max: 1000000.0
+  pnp_whiteness_weight: 0.25
+  pnp_momentum: 0.0
+  pnp_denoiser_relaxation: 1.0
+  pnp_dual_damping: 1.0
+  pnp_final_data_step: false
+optimizer:
+  name: adamw
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  betas:
+  - 0.9
+  - 0.99
+scheduler:
+  name: cosine
+  warmup_steps: 1000
+  step_interval: step
+training:
+  seed: 3407
+  validation_seed: 9102
+  epochs: 200
+  max_steps: null
+  resume: null
+  ema_decay: 0.999
+  max_grad_norm: 1.0
+  log_every_steps: 20
+  validate_every_epochs: 1
+  save_every_epochs: 1
+hardware:
+  device: cuda:0
+  precision: auto
+  use_accelerate: true
+  batch_size: 8
+  eval_batch_size: 16
+  grad_accum_steps: 4
+  num_workers: 4
+  pin_memory: auto
+  persistent_workers: auto
+  gradient_checkpointing: false
+logging:
+  tensorboard: true
+  jsonl: true

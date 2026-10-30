@@ -1,0 +1,17 @@
+# Core dependencies (see also pyproject.toml)
+torch>=2.1
+numpy>=1.24
+h5py>=3.9
+PyYAML>=6.0
+accelerate>=0.27
+tqdm>=4.66
+tensorboard>=2.14
+
+# Optional: legacy MATLAB v7.3 .mat shards (pip install -e ".[mat]")
+# hdf5storage>=0.1.19
+
+# Optional: test-only (pip install -e ".[dev]")
+# pytest>=7.4
+
+# Optional: figures (pip install -e ".[plots]")
+# matplotlib>=3.7

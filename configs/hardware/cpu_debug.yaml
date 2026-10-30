@@ -1,0 +1,11 @@
+hardware:
+  device: cpu
+  precision: fp32
+  use_accelerate: false
+  batch_size: 1
+  eval_batch_size: 1
+  grad_accum_steps: 1
+  num_workers: 0
+  pin_memory: false
+  persistent_workers: false
+  gradient_checkpointing: false

@@ -1,0 +1,12 @@
+{
+  "claim": "Transfer is heterogeneous, and more internal endpoint samples improve mean accuracy at additional computation.",
+  "panels": [
+    "three fixed-setting transfer folds with in-domain references",
+    "M sweep at fixed K=40"
+  ],
+  "source": [
+    "cross_scene_updated_20260918.json",
+    "current_20260918/m_seed_summary.csv"
+  ],
+  "limits": "Left: full tests; new globally fixed PF settings and globally fixed FA settings, one inference seed. Right: paired post-hoc subset; M counts internal samples."
+}

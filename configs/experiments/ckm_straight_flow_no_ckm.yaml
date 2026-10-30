@@ -1,0 +1,93 @@
+experiment:
+  name: ckm_straight_flow_no_ckm
+  description: Capacity-matched unconditional straight Flow Matching prior for PnP-Flow and FlowADMM
+
+data:
+  backend: auto
+  index_file: indices/{split}.json
+  sampling: random_tf
+  train_scenes: [scene_01, scene_02, scene_03]
+  validation_scenes: [scene_01, scene_02, scene_03]
+  test_scenes: [scene_01, scene_02, scene_03]
+  include_observation: false
+  normalization:
+    mode: global_rms
+    stats_file: normalization.json
+
+# Keep the entire CKM encoder and FiLM/AdaGN interface so that this control
+# has exactly the same architecture and parameter count as the CKM prior.
+# ``force_unconditional`` suppresses every condition contribution during both
+# training and inference; simply zeroing CKM at test time is not this control.
+model:
+  type: straight_flow_matching
+  in_channels: 2
+  out_channels: 2
+  dim: 32
+  dim_mults: [1, 2, 4]
+  groups: 8
+  condition:
+    enabled: true
+    force_unconditional: true
+    embed_dim: 128
+    scalar_dim: 6
+    state_dim: 8
+    tx_beam_dim: 64
+    rx_beam_dim: 16
+    adp_shape: [16, 16, 12]
+    dropout_prob: 0.10
+    use_scalar: true
+    use_state: true
+    use_beam: true
+    use_adp: true
+
+straight_flow_matching:
+  time_min: 0.0
+  time_max: 1.0
+  latent_std: 1.0
+  coupling: minibatch_ot
+
+loss:
+  type: straight_flow_matching
+
+sampling:
+  solver: flow_admm
+  pnp_iterations: 20
+  flow_initialization: ls
+  flow_latent_std: 1.0
+  pnp_flow_step_scale: 1.0
+  pnp_flow_alpha: 1.0
+  pnp_flow_time_min: 0.0
+  pnp_flow_time_max: 1.0
+  pnp_flow_latent_samples: 5
+  flow_admm_tau: 1.0
+  flow_admm_time_min: 0.1
+  flow_admm_time_max: 0.95
+  flow_admm_gamma: 1.0
+  flow_admm_k_avg: 5
+  flow_admm_k_avg_schedule: constant
+  flow_admm_k_avg_early: 1
+  flow_admm_k_avg_mid: 2
+  flow_admm_k_avg_late: 5
+  flow_admm_switch_frac: 0.5
+  flow_admm_switch_frac_2: 0.8
+
+optimizer:
+  name: adamw
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  betas: [0.9, 0.99]
+
+scheduler:
+  name: cosine
+  warmup_steps: 1000
+  step_interval: step
+
+training:
+  seed: 3407
+  validation_seed: 9102
+  epochs: 200
+  ema_decay: 0.999
+  max_grad_norm: 1.0
+  log_every_steps: 20
+  validate_every_epochs: 1
+  save_every_epochs: 1

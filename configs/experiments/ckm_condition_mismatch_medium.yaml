@@ -1,0 +1,27 @@
+# Fixed test-time CKM mismatch profile for the FlowADMM four-cell study.
+# Magnitudes are in the normalized feature space.  This is a reproducible
+# stress profile, not a claim that these values equal a measured map error.
+condition_corruption:
+  enabled: true
+  scalar_noise_std: 0.05
+
+  # state = [observed_position(3), velocity(3), sin(yaw), cos(yaw)]
+  # Keep these separate so the paper can attribute the source of mismatch.
+  position_noise_std: 0.10
+  velocity_noise_std: 0.10
+  orientation_noise_std: 0.00
+  state_dropout: 0.10
+
+  beam_noise_std: 0.02
+  beam_uniform_mix: 0.10
+  beam_max_shift: 1
+  beam_dropout: 0.15
+
+  adp_noise_std: 0.03
+  adp_gain_std: 0.10
+  adp_blur_kernel: 3
+  adp_max_shift: 1
+  adp_dropout: 0.20
+
+  scalar_dropout: 0.10
+  time_frequency_dropout: 0.05

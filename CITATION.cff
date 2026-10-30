@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code, please cite the paper below. The manuscript is under
+  review and the target venue is not yet confirmed; the citation metadata will
+  be updated when the venue is assigned.
+title: "KAP-Flow: Bridging Pilot Observations and Propagation Knowledge for MIMO Channel Estimation"
+abstract: >-
+  Pilot-limited MIMO channel estimation must infer components beyond the
+  pilot-observable subspace. KAP-Flow is a channel-knowledge-map (CKM)
+  conditioned FlowADMM receiver for mobile users: location-queried propagation
+  statistics, user state and time-frequency coordinates condition a shared
+  straight-flow prior (knowledge-and-state conditioning, KSC), and a
+  noise-aware complex-domain pilot update, conditional prior refinement and
+  dual feedback combine this prior with the current measurements
+  (pilot-prior consensus, PPC). Across three simulated sites and nine SNRs,
+  joint conditioning improves aggregate NMSE by 2.27 dB, and with the same
+  conditional prior KAP-Flow outperforms PnP-Flow by 4.25 dB.
+authors:
+  - family-names: "Li"
+    given-names: "Ruixuan"
+    affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+  - family-names: "Wang"
+    given-names: "Shuai"
+    affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+  - family-names: "Li"
+    given-names: "Lingxiang"
+    affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+  - family-names: "Chen"
+    given-names: "Zhi"
+    affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+type: software
+license: MIT
+repository-code: "https://github.com/LRXuanxuan/kap-flow-bridging-pilot-observations-and-propagation-knowledge-for-mimo-channel-estimation"
+url: "https://github.com/LRXuanxuan/kap-flow-bridging-pilot-observations-and-propagation-knowledge-for-mimo-channel-estimation"
+keywords:
+  - "MIMO channel estimation"
+  - "channel knowledge map"
+  - "flow matching"
+  - "plug-and-play ADMM"
+  - "user mobility"
+preferred-citation:
+  type: unpublished
+  title: "KAP-Flow: Bridging Pilot Observations and Propagation Knowledge for MIMO Channel Estimation"
+  authors:
+    - family-names: "Li"
+      given-names: "Ruixuan"
+      affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+    - family-names: "Wang"
+      given-names: "Shuai"
+      affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+    - family-names: "Li"
+      given-names: "Lingxiang"
+      affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+    - family-names: "Chen"
+      given-names: "Zhi"
+      affiliation: "National Key Laboratory of Wireless Communications, University of Electronic Science and Technology of China (UESTC), Chengdu 611731, China"
+  year: 2026
+  status: submitted
+  notes: >-
+    Manuscript under review; the target venue has not been assigned/confirmed
+    by the authors. Do not cite a venue or DOI until this file is updated.
