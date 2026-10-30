@@ -38,8 +38,10 @@ wandb/
 tensorboard/
 *.log
 
-# Datasets (generated or downloaded separately, see docs/DATA.md)
-data/
+# Datasets (generated or downloaded separately, see docs/DATA.md).
+# Anchor to the repository root: a bare ``data/`` would also exclude the
+# source package ``src/ckmsrf/data/``.
+/data/
 *.mat
 *.h5
 *.hdf5
@@ -50,7 +52,7 @@ data/
 
 # Generated timing / study outputs
 timing/outputs/
-analysis/
+/analysis/
 
 # Local machine-specific overrides
 configs/local.yaml
